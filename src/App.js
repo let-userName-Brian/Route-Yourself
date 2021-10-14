@@ -1,24 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
-
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Box from '@mui/material/Box';
 
 export default function App() {
-
   return (
     <Router>
       <div>
         <nav>
-          <ul>
-            <li>
+        <ButtonGroup variant="text" aria-label="text button group">
+            <Button variant="text">
               <Link to="/">Home</Link>
-            </li>
-            <li>
+            </Button>
+            <Button variant="text">
               <Link to="/products">Products</Link>
-            </li>
-            <li>
+            </Button>
+            <Button variant="text">
               <Link to="/Cart">View Cart</Link>
-            </li>
-          </ul>
+            </Button>
+          </ButtonGroup>
         </nav>
         <Switch>
           <Route path="/Products">
