@@ -73,7 +73,7 @@ function Products() {
 }
 
 //here are your products
-function Product(item) {
+function Product() {
   let { productId } = useParams();
 
   return (
@@ -87,10 +87,11 @@ function Product(item) {
 
 
 function Cart() {
+  
   return (
     <div>
       <h2>Cart</h2>
-      <button>If you are ready to leave click me!</button>
+      <Link to="/">Check out and go Home</Link>
     </div>
   )
 }
